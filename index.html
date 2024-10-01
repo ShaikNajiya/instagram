@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Profile</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+
+      .main {
+        border: 1px solid black;
+        height: 485px;
+        width: 240px;
+        border-radius: 10px;
+        background-color: white;
+        /* align-items: center; */
+        /* justify-content: center; */
+      }
+      .main:hover{
+        background-color: rgb(218, 39, 101);
+      }
+      .black {
+        border: 1px solid rgb(5, 5, 5);
+        height: 20px;
+        width: 240px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgb(5, 5, 5);
+        /* margin: -1px;
+        margin-bottom: 0px; */
+      }
+      .m1 {
+        float: right;
+        /* margin-top: 2px; */
+        margin-right: 3px;
+        color: #f7f5f5;
+      }
+      .m12 {
+        margin-top: 2px;
+        margin-right: 3px;
+        color: #f7f5f5;
+      }
+      .m2 {
+        /* margin-top: 2px; */
+        float: left;
+        margin-left: 6px;
+        color: #f7f5f5;
+      }
+      .m21 {
+        color: #f7f5f5;
+        /* margin-top: 2px; */
+        margin-left: 6px;
+      }
+      .m3 {
+        height: 30px;
+        width: 230px;
+        display: flex;
+        align-items: center;
+      }
+      .ci {
+        height: 40px;
+        width: 40px;
+        border: 2px solid #cc2366;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./html/prabhas.avif);
+      }
+      .m4 {
+        display: grid;
+        grid-template-areas:
+          "area1 area2 area3 area4"
+          "area1 area2 area3 area4"
+          "area1 area5 area6 area7"
+          "area1 area5 area6 area7";
+      }
+      .item1 {
+        grid-area: area1;
+      }
+      .item2 {
+        grid-area: area2;
+      }
+      .item3 {
+        grid-area: area3;
+      }
+      .item4 {
+        grid-area: area4;
+      }
+      .item5 {
+        grid-area: area5;
+      }
+      .item6 {
+        grid-area: area6;
+      }
+      .item7 {
+        grid-area: area7;
+      }
+      .m5 {
+        margin-top: 70px;
+        width: 240px;
+        height: 25px;
+
+        display: flex;
+        padding: -10px;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: rgb(251, 251, 251); */
+      }
+      .itt {
+        background-color: rgb(124, 166, 255);
+        height: 15px;
+        text-align: center;
+        padding: 2%;
+        border-radius: 15%;
+      }
+      .main_radius {
+        height: 5vh;
+        transform: translateY(5px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .item_radius {
+        height: 5vh;
+        width: 6vw;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .grid1{
+        height:33vh;
+        width:100%;
+        border: 1px solid;
+        transform: translateY(30px);
+        border-radius: 5%;
+        overflow-y: scroll;
+        display: grid;
+        grid-template-areas:"area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9 " ;
+        justify-content: space-around;
+      }
+      .grid_img{
+        height:10vh;
+        width:10vw;
+      }
+      .img1{
+        grid-area: area1;
+      }
+      .img2{
+        grid-area: area2;
+      }
+      .img3{
+        grid-area: area3;
+      }
+      .img4{
+        grid-area: area4;
+      }
+      .img5{
+        grid-area: area5;
+      }
+      .img6{
+        grid-area: area6;
+      }
+      .img7{
+        grid-area: area7;
+
+      }
+      .img8{
+        grid-area: area8;
+      }
+      .img9{
+        grid-area: area9;
+      }
+     
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color: pink">
+      <marquee
+        ><ion-icon name="logo-instagram"></ion-icon>Instagram<ion-icon
+          name="logo-instagram"
+        ></ion-icon
+      ></marquee>
+    </h1>
+    <center>
+      <div class="main">
+        <div class="black">
+          <div class="m1">
+            <ion-icon class="m12" name="headset"></ion-icon
+            ><ion-icon class="m12" name="wifi-outline"></ion-icon
+            ><ion-icon name="battery-charging-outline"></ion-icon>
+          </div>
+
+          <div class="m2">
+            <ion-icon name="airplane"></ion-icon
+            ><ion-icon class="m21" name="notifications-off-circle"></ion-icon>
+          </div>
+        </div>
+        <div class="m3">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+          <p
+            style="
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: small;
+            "
+          >
+            Unicorn_girl
+          </p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </div>
+        <div class="m4">
+          <div class="item1"><div class="ci"></div></div>
+          <div class="item2">
+            <strong><center>9</center></strong>
+          </div>
+          <div class="item3">
+            <strong><center>101K</center></strong>
+          </div>
+          <div class="item4">
+            <strong><center>1</center></strong>
+          </div>
+          <div class="item5"><b>posts</b></div>
+          <div class="item6"><b>followers</b></div>
+          <div class="item7"><b>following</b></div>
+        </div>
+        <pre
+          style="
+            float: left;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+            font-size: x-small;
+          "
+        >
+&emsp;<b>NAJ_BABIRA</b>&#128526;
+&#128521;Allah knows best&#128513;
+&#128516;My strength is my family&#128516;
+&#127775;Good things take time&#129311;</pre
+        >
+        <div class="m5">
+          <div
+            style="
+              float: left;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: small;
+            "
+            class="itt"
+          >
+            &emsp;Follow&emsp;
+          </div>
+          <div
+            style="
+              float: left;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: small;
+            "
+            class="itt"
+          >
+            &emsp;Message&emsp;
+          </div>
+          <div style="float: left" class="itt">
+            <ion-icon name="person-add-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="main_radius">
+          <div><img src="./html/allah1.avif" class="item_radius" />allah</div>
+          <div><img src="./html/jesus.webp" class="item_radius" />jesus</div>
+          <div><img src="./html/hanuman1.jpeg" class="item_radius" />god</div>
+          <div><img src="./html/jaipur.jpg" class="item_radius" />jaipur</div>
+          <div><img src="./html/prabhas.avif" class="item_radius" />prabhas</div>
+        </div>
+        <div class="grid1"><div><img src="./html/allah1.avif"  class="grid_img img1"/></div>
+        <div><img src="./html/allah2.webp" class="grid_img img2" /></div>
+        <div><img src="./html/allah3.jpg" class="grid_img img3"/></div>
+        <div><img src="./html/allah4.jpeg" class="grid_img img4"/></div>
+        <div><img src="./html/allah5.jpeg" class="grid_img img5"/></div>
+        <div><img src="./html/Allah6.webp" class="grid_img img6"/></div>
+        <div><img src="./html/allah7.jpg" class="grid_img img7"/></div>
+        <div><img src="./html/allah8.jpg" class="grid_img img8"/></div>
+        <div><img src="./html/allah10.webp" class="grid_img img9"/></div>
+      </div>
+      
+      </div>
+    </center>
+  </body>
+</html>
