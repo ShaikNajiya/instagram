@@ -26,7 +26,7 @@
         /* align-items: center; */
         /* justify-content: center; */
       }
-      .main:hover{
+      .main:hover {
         background-color: rgb(218, 39, 101);
       }
       .black {
@@ -127,11 +127,13 @@
       }
       .main_radius {
         height: 5vh;
+        position:absolute;
+        width:8%;
         transform: translateY(5px);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        gap: 10px;
+        gap: 1px;
       }
       .item_radius {
         height: 5vh;
@@ -139,55 +141,51 @@
         border: 1px solid black;
         border-radius: 50%;
       }
-      .grid1{
-        height:33vh;
-        width:100%;
+      .grid1 {
+        height: 33vh;
+        width: 100%;
         border: 1px solid;
-        transform: translateY(30px);
+        transform: translateY(70px);
         border-radius: 5%;
         overflow-y: scroll;
         display: grid;
-        grid-template-areas:"area1 area2 area3"
-        "area4 area5 area6"
-        "area7 area8 area9 " ;
+        grid-template-areas:
+          "area1 area2 area3"
+          "area4 area5 area6"
+          "area7 area8 area9 ";
         justify-content: space-around;
       }
-      .grid_img{
-        height:10vh;
-        width:10vw;
+      .grid_img {
+        height: 10vh;
+        width: 10vw;
       }
-      .img1{
+      .img1 {
         grid-area: area1;
       }
-      .img2{
+      .img2 {
         grid-area: area2;
       }
-      .img3{
+      .img3 {
         grid-area: area3;
       }
-      .img4{
+      .img4 {
         grid-area: area4;
       }
-      .img5{
+      .img5 {
         grid-area: area5;
       }
-      .img6{
+      .img6 {
         grid-area: area6;
       }
-      .img7{
+      .img7 {
         grid-area: area7;
-
       }
-      .img8{
+      .img8 {
         grid-area: area8;
       }
-      .img9{
+      .img9 {
         grid-area: area9;
       }
-     
-
-
-
     </style>
   </head>
   <body>
@@ -286,19 +284,20 @@
           <div><img src="./html/jesus.webp" class="item_radius" />jesus</div>
           <div><img src="./html/hanuman1.jpeg" class="item_radius" />god</div>
           <div><img src="./html/jaipur.jpg" class="item_radius" />jaipur</div>
-          <div><img src="./html/prabhas.avif" class="item_radius" />prabhas</div>
+        
+           
         </div>
-        <div class="grid1"><div><img src="./html/allah1.avif"  class="grid_img img1"/></div>
-        <div><img src="./html/allah2.webp" class="grid_img img2" /></div>
-        <div><img src="./html/allah3.jpg" class="grid_img img3"/></div>
-        <div><img src="./html/allah4.jpeg" class="grid_img img4"/></div>
-        <div><img src="./html/allah5.jpeg" class="grid_img img5"/></div>
-        <div><img src="./html/Allah6.webp" class="grid_img img6"/></div>
-        <div><img src="./html/allah7.jpg" class="grid_img img7"/></div>
-        <div><img src="./html/allah8.jpg" class="grid_img img8"/></div>
-        <div><img src="./html/allah10.webp" class="grid_img img9"/></div>
-      </div>
-      
+        <div class="grid1">
+          <div><img src="./html/allah1.avif" class="grid_img img1" /></div>
+          <div><img src="./html/allah2.webp" class="grid_img img2" /></div>
+          <div><img src="./html/allah3.jpg" class="grid_img img3" /></div>
+          <div><img src="./html/allah4.jpeg" class="grid_img img4" /></div>
+          <div><img src="./html/allah5.jpeg" class="grid_img img5" /></div>
+          <div><img src="./html/Allah6.webp" class="grid_img img6" /></div>
+          <div><img src="./html/allah7.jpg" class="grid_img img7" /></div>
+          <div><img src="./html/allah8.jpg" class="grid_img img8" /></div>
+          <div><img src="./html/allah10.webp" class="grid_img img9" /></div>
+        </div>
       </div>
     </center>
   </body>
